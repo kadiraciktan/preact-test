@@ -5,6 +5,8 @@ export function IndexPage() {
   return (
     <div>
       <HeaderComponent />
+
+      <button className="btn">Hello daisyUI</button>
     </div>
   );
 }
