@@ -5,7 +5,8 @@
   "source": "src/index.html",
   "scripts": {
     "start": "parcel",
-    "watch": "parcel watch"
+    "watch": "parcel watch",
+    "build": "parcel build --public-url ./"
   },
   "author": "",
   "license": "ISC",
