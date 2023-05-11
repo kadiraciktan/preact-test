@@ -21,13 +21,13 @@ export function MyButtonComponent() {
 
     setTimeout(() => {
       toasts.value = toasts.value.filter((toast) => toast !== random);
-    }, 3000);
+    }, 1000);
   };
 
   return (
     <div>
       <button className={currentTheme.value} onClick={changeTheme}>
-        {currentTheme.value === styles.light ? "Light" : "Dark"}
+        Push Notification and Change Theme
       </button>
 
       {toasts.value.map((message) => {
@@ -40,7 +40,10 @@ export function MyButtonComponent() {
           >
             <div className="alert alert-info cursor-pointer">
               <div>
-                <span>{message}</span>
+                <span>
+                  Current Theme Changed To:
+                  {currentTheme.value === styles.light ? "Light" : "Dark"}
+                </span>
               </div>
             </div>
           </div>
