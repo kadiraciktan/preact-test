@@ -3,6 +3,7 @@
         "allowJs": true,
         "checkJs": true,
         "jsx": "react-jsx",
+        "baseUrl": "./",
     },
     "exclude": [
         "node_modules",
