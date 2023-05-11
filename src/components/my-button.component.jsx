@@ -31,9 +31,10 @@ export function MyButtonComponent() {
       </button>
 
       {toasts.value.map((message) => {
+        console.log("rendering toast");
         return (
           <div
-            className="toast"
+            className="toast toast-end"
             onClick={() => {
               toasts.value = toasts.value.filter((toast) => toast !== message);
             }}
