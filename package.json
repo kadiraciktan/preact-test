@@ -4,7 +4,7 @@
   "description": "",
   "source": "src/index.html",
   "scripts": {
-    "start": "parcel ---port 80",
+    "start": "parcel",
     "watch": "parcel watch",
     "build": "parcel build  --public-url ./",
     "build:docker": "docker build -t preact-test . && docker run --name preact -p 80:1234 -it preact-test "
