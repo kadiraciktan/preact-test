@@ -4,10 +4,10 @@
   "description": "",
   "source": "src/index.html",
   "scripts": {
-    "start": "parcel --port 1234",
+    "start": "parcel",
     "watch": "parcel watch",
     "build": "parcel build  --public-url ./",
-    "build:docker": "docker build -t preact-test . && docker run --name preact -p 80:1234 -it preact-test "
+    "build:docker": "docker build -t preact-test . && docker run --name preact -p 80:8080 -it preact-test "
   },
   "author": "",
   "license": "ISC",
